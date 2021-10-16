@@ -60,26 +60,21 @@ class Rxv<T> implements StreamSink<T> {
 }
 
 extension StringExtension on String {
-  /// Returns a `RxString` with [this] `String` as initial value.
   Rxv<String> get rxv => Rxv<String>(this);
 }
 
 extension IntExtension on int {
-  /// Returns a `RxInt` with [this] `int` as initial value.
   Rxv<int> get rxv => Rxv<int>(this);
 }
 
 extension DoubleExtension on double {
-  /// Returns a `RxDouble` with [this] `double` as initial value.
   Rxv<double> get rxv => Rxv<double>(this);
 }
 
 extension BoolExtension on bool {
-  /// Returns a `RxBool` with [this] `bool` as initial value.
   Rxv<bool> get rxv => Rxv<bool>(this);
 }
 
 extension RxT<T> on T {
-  /// Returns a `Rx` instance with [this] `T` as initial value.
   Rxv<T> get rxv => Rxv<T>(this);
 }
