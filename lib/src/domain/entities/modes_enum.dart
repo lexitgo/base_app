@@ -1,0 +1,1 @@
+enum modeTypes {pro,lite}
